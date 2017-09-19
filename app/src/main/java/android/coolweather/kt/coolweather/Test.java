@@ -25,6 +25,8 @@ public class Test extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
 
+        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+
         //noinspection RestrictedApi
         List<Fragment> fragments = getSupportFragmentManager().getFragments();
 
